@@ -14,9 +14,3 @@ class register_rent():
 
 	def toCharge(self,register):
 		self.rents_register[register].charge()
-
-
-registro = register_rent()
-renta1 = registro.register(quantity=4, kinds=['Week','Day','Hour','Day'])
-print(renta1)
-registro.toCharge(1)
