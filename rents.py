@@ -16,10 +16,9 @@ class rents():
 	def __init__(self,kind='Hour',family=False):
 		self.kind = kind
 		self.family=family
-		self.start = dt.datetime.now()- dt.timedelta(days=7)
+		self.start = dt.datetime.now()
 		self.amount=0
 		self.discount= 0.7 if family else 1
-		print('The rent has begun at '+str(self.start))
 
 	def charge(self):
 		options = {
